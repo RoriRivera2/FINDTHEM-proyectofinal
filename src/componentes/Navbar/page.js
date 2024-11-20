@@ -47,7 +47,7 @@ const Navbar = () => {
             <li>
               <details>
                 <summary>Contacto</summary>
-                <ul className="rounded-t-none bg-base-100 p-2">
+                <ul className="z-10 rounded-t-none bg-Azul-Fuerte p-1">
                   <li>
                     <a>Policia</a>
                   </li>
