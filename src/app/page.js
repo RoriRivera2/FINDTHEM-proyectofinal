@@ -1,42 +1,35 @@
-import Header from "./componentes/Header";
-import DonacionButon from "./componentes/DonacionBoton";
-import PrimeraSeccion from "./componentes/PrimeraSeccion";
-import CarruselPublicaciones from "./componentes/CarruselPublicaciones";
-import SocialButtons from "./componentes/SocialButtons";
-import UltimasNoticias from "./componentes/UltimasNoticias";
-import Footer from "./componentes/Footer";
+import "./globals.css";
+import Header from "../componentes/Header";
+import DonacionButon from "../componentes/DonacionBoton";
+import PrimeraSeccion from "../componentes/PrimeraSeccion";
+import CarruselPublicaciones from "../componentes/CarruselPublicaciones";
+import SocialButtons from "../componentes/SocialButtons";
+import UltimasNoticias from "../componentes/UltimasNoticias";
+import Footer from "../componentes/Footer";
+import Nosotros from "@/componentes/Nosotros/page";
+import Navbar from "@/componentes/Navbar/page";
+import Image from "next/image";
+import PNavbar from "@/componentes/Pruebas/page";
+
+// PALETA DE COLORES
+// #215adc
+// #1c31a5
+// #010937
 
 export default function Home() {
   return (
-    <main>
-      <header className="">
-        <Header></Header>
-
-      </header>
-
-      <DonacionButon></DonacionButon>
-      <SocialButtons></SocialButtons>
-
-      <section>
-        <div>
-          <PrimeraSeccion></PrimeraSeccion>
-        </div>
-      </section>
-
-       <div className="flex justify-center bg-slate-800">
-        <CarruselPublicaciones>
-        </CarruselPublicaciones>
-       </div>
-       <div className="flex justify-center">
-        <UltimasNoticias>
-        </UltimasNoticias>
-       </div>
+    <main className="min-h-screen bg-white">
+      <Nosotros />
+      <Navbar />
+      <CarruselPublicaciones />
+      {/*<Header />
+      <DonacionButon/>
+      <SocialButtons/>
       
-      <Footer>
-
-      </Footer>
-
+      
+      <PrimeraSeccion/>
+      <UltimasNoticias/>      
+      <Footer/> */}
     </main>
   );
-
 }
